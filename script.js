@@ -1,5 +1,3 @@
-
-
 function escrevendoLetra(elemento){
     function ativaLetra(elemento){
         const arrayTexto = elemento.innerHTML.split(''); //separa cada letra em um array
@@ -17,6 +15,18 @@ function escrevendoLetra(elemento){
 
 escrevendoLetra()
 
+function ativacaoMenu(){
+    const ativaMenu = document.querySelector('.fa-bars');
+    const navMenu = document.querySelector('header .navegacao-primaria')
+
+
+    ativaMenu.addEventListener('click', ()=>{
+        ativaMenu.classList.toggle('fa-x')
+        navMenu.classList.toggle('ativado')
+    })
+}
+
+ativacaoMenu()
 
 function MenuMobol(){
     const ativaMenu = document.querySelector('.fa-bars');
