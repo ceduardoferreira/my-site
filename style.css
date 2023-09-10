@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap');
+
 
 * {
     margin: 0;
@@ -106,9 +108,10 @@ header .navegacao-primaria li a:hover::after{
 .section-div div a{
     justify-self: start;
     color: #fff;
+    font-weight: bold;
     padding: 15px 40px;
-    border-radius: 5px;
-    border: 2px solid white
+    border-radius: 15px;
+    background-color: #0062f5;
 }
 
 .section-div img{
@@ -305,7 +308,7 @@ main .sobre{
     }
 
     .section-div {
-        background-image: url(image/myphoto.png);
+        background-image: url(image/fotofundoazul.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
