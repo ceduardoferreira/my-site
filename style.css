@@ -826,6 +826,56 @@ main .sobre{
     }
 }
 
+.contato {
+    padding: 40px;
+    background-color: #151515;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contato label {
+    font-size: 1.2rem;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #222;
+    color: white;
+}
+
+.contato button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0062f5;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #004bbd;
+}
+
+#formFeedback {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #f00;
+}
+
+
 
 /* footer */
 

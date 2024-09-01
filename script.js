@@ -145,6 +145,32 @@ function showLista(lista, buttom = "all"){
     }
 }
 
+document.getElementById('formContato').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const assunto = document.getElementById('assunto').value.trim();
+    const mensagem = document.getElementById('mensagem').value.trim();
+    const feedback = document.getElementById('formFeedback');
+
+    if (nome === "" || email === "" || assunto === "" || mensagem === "") {
+        feedback.textContent = "Por favor, preencha todos os campos.";
+    } else if (!validateEmail(email)) {
+        feedback.textContent = "Por favor, insira um e-mail válido.";
+    } else {
+        feedback.textContent = "Formulário enviado com sucesso!";
+        feedback.style.color = "#0f0";
+        // Aqui você pode adicionar lógica para enviar os dados para o servidor, se necessário.
+    }
+});
+
+function validateEmail(email) {
+    const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    return re.test(String(email).toLowerCase());
+}
+
+
 buttonGeral.forEach((item)=>{
     item.addEventListener('click', (e)=>{
         let currentButton = e.target;
